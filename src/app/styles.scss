@@ -1,0 +1,14 @@
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+body {
+  background-image: url('./bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-panel {
+  background: white;
+  border-radius: 5px;
+  padding: 2em;
+  margin-top: 1em;
+  max-width: 400px;
+}

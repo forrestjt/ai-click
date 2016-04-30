@@ -36,6 +36,25 @@ const common = {
         test: /\.jsx?$/,
         loaders: ['babel?cacheDirectory'],
         include: PATHS.app
+      },
+      {
+       test: /\.scss$/,
+       loaders: ["style", "css", "resolve-url", "sass?sourceMap"]
+     },
+     {
+        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)$/,
+        loader: 'url-loader',
+        query: {
+          name: '[hash].[ext]',
+          limit: 20000,
+        },
+      },
+      {
+        test: /\.(eot|ttf|wav|mp3)$/,
+        loader: 'file-loader',
+        query: {
+          name: '[hash].[ext]',
+        },
       }
     ]
   },
